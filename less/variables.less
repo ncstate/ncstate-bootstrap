@@ -13,11 +13,11 @@
 @gray-light:             lighten(#000, 60%);   // #999
 @gray-lighter:           lighten(#000, 93.5%); // #eee
 
-@brand-primary:         #428bca;
-@brand-success:         #5cb85c;
-@brand-info:            #5bc0de;
-@brand-warning:         #f0ad4e;
-@brand-danger:          #d9534f;
+@brand-primary:         #333333;
+@brand-success:         #333333;
+@brand-info:            #333333;
+@brand-warning:         #333333;
+@brand-danger:          #333333;
 
 
 //== Scaffolding
@@ -39,8 +39,13 @@
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
-@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@univers-roman: 		  "Univers LT W01 55 Roman", Arial, sans-serif;
+@univers-condensed: 	  "UniversLTW01-57Condense 723821", Arial, sans-serif;
+@univers-condensed-bold:  "UniversLTW01-67BoldCn", Arial, sans-serif;
+@glypha-roman:			  "Glypha LT W01 55 Roman", Georgia, serif;
+
+@font-family-sans-serif:  @univers-roman;
+@font-family-serif:       @glypha-roman;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
