@@ -1,0 +1,15 @@
+small
+strong
+em
+address
+anchors
+mixed nested lists
+tables
+forms
+
+ 
+
+1) Typography, Code, Tables, Images, Thumbnails, Labels, Badges
+2) Forms, Buttons, Button Groups, Button Drop downs, Input Groups, Alerts, Media Objects
+3) Nav, Navbar, bread crumb, pagination
+4) Jumbotron, Progress Bars, Icons
