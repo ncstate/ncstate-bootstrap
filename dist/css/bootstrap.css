@@ -3508,6 +3508,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li {
   position: relative;
   display: block;
+  padding: left: 0;
+  background: none;
 }
 .nav > li > a {
   position: relative;
@@ -3657,6 +3659,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-justified > li > a {
     margin-bottom: 0;
   }
+}
+ul.dropdown-menu li {
+  padding-left: 0;
+  background: none;
 }
 .nav-tabs-justified {
   border-bottom: 0;
@@ -4190,6 +4196,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .pagination > li {
   display: inline;
+  padding-left: 0;
+  background: none;
 }
 .pagination > li > a,
 .pagination > li > span {
