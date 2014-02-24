@@ -1,13 +1,15 @@
-small
-strong
-em
-address
-anchors
-mixed nested lists
-tables
-forms
+Notes: 
 
- 
+1) font-face: I need the self hosted type files, or a higher version of our plan to set this up.
+* small
+* strong
+* em
+
+2) Throw some anchors in (in gray)
+
+3) Mix up ul and ol for testing
+
+Organization: 
 
 1) Typography, Code, Tables, Images, Thumbnails, Labels, Badges
 2) Forms, Buttons, Button Groups, Button Drop downs, Input Groups, Alerts, Media Objects

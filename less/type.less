@@ -148,19 +148,57 @@ ul,
 ol {
   margin-top: 0;
   margin-bottom: (@line-height-computed / 2);
-  padding-left: 16px;
   ul,
   ol {
     margin-bottom: 0;
   }
 }
 
+ol{
+	padding-left: 32px;
+}
+
+ul{ 
+  list-style: none; 
+  padding-left: 0px; 
+  line-height: 1.6em;
+  li{ 
+		background: url("../../demo/red-arrow.gif") no-repeat 1px 6px; 
+		padding-left: 16px; 
+  	li{
+	  	background: url("../../demo/gray-arrow.gif") no-repeat 1px 6px;
+	  li{
+			background: url("../../demo/gray-square.gif") no-repeat 1px 6px;
+	  }
+	}
+  }
+}
+
+ul li,
+ol li{
+	margin: 10px 0px;
+}
+
 // List options
 
 // Unstyled keeps list items block level, just removes default browser padding and list-style
 .list-unstyled {
+  background: none;
   padding-left: 0;
   list-style: none;
+	
+	li{
+		
+		background: none;
+		padding-left: 0px;
+
+  	li{
+			background: url("red-arrow.gif") no-repeat 1px 6px; padding-left: 16px;
+			li{
+			  background: url("gray-arrow.gif") no-repeat 1px 6px; padding-left: 16px;
+			}
+	  }
+  }
 }
 
 // Inline turns list items into inline-block
@@ -168,6 +206,7 @@ ol {
   .list-unstyled();
 
   > li {
+		background: none;
     display: inline-block;
     padding-left: 5px;
     padding-right: 5px;
@@ -232,11 +271,12 @@ abbr[data-original-title] {
 
 // Blockquotes
 blockquote {
-  padding: (@line-height-computed / 2) @line-height-computed;
+  padding: (@line-height-computed / 2) 0;
   margin: 0 0 @line-height-computed;
-  font-size: (@font-size-base * 1.25);
-  border-left: 5px solid @blockquote-border-color;
-
+  font-size: (@font-size-base * 1.875);
+	line-height: 1.3;
+	font-family: @univers-condensed;
+	
   p,
   ul,
   ol {
@@ -251,7 +291,7 @@ blockquote {
   small,
   .small {
     display: block;
-    font-size: 80%; // back to default font-size
+    font-size: @font-size-base; // back to default font-size
     line-height: @line-height-base;
     color: @blockquote-small-color;
 
@@ -266,10 +306,6 @@ blockquote {
 // Heads up: `blockquote.pull-right` has been deprecated as of v3.1.0.
 .blockquote-reverse,
 blockquote.pull-right {
-  padding-right: 15px;
-  padding-left: 0;
-  border-right: 5px solid @blockquote-border-color;
-  border-left: 0;
   text-align: right;
 
   // Account for citation
