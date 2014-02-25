@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>NC State University</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/3e78cf85-9cc5-480a-af69-69fe4c1f3dc3.css" />
+	<link href="../dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+
+	<!-- overrides -->
+
+	<style type="text/css">
+
+	.navbar{
+		margin-bottom: 0px;
+	}
+
+	#lead-in{
+		background: #eee;
+		padding: 3em 0em;
+	}
+
+	.navbar-toggle .icon-bar{
+		background-color: #333;
+	}
+
+	/* accents */
+
+	strong{font-family: "Univers LT W01 65 Bold", Arial, sans-serif;}
+
+	/* Lists */
+
+	.main-content ul{ list-style: none; padding-left: 0px; line-height: 1.6em;}
+	.main-content ul li{ background: url("red-arrow.gif") no-repeat 1px 6px; padding-left: 16px; margin: 10px 0px;}
+	.main-content ul li li{ background: url("gray-arrow.gif") no-repeat 1px 6px; }
+	.main-content ul li li li{ background: url("gray-square.gif") no-repeat 1px 6px; }
+
+	.main-content ul.list-unstyled li{
+		background: none;
+		padding-left: 0px;
+	}
+
+	.main-content ul.list-unstyled li li{ background: url("red-arrow.gif") no-repeat 1px 6px; padding-left: 16px; }
+	.main-content ul.list-unstyled li li li{ background: url("gray-arrow.gif") no-repeat 1px 6px; padding-left: 16px; }
+
+	.main-content ol{padding-left: 32px; line-height: 1.6em;}
+	.main-content ol li{line-height: 1.6em; margin: 10px 0px}
+
+	.main-content ul.list-inline li{background: none}
+
+	dl{line-height: 1.6em;}
+	dt{font-family: "Univers LT W01 65 Bold", Arial, sans-serif;}
+	dt{margin-top: 10px;}
+
+	.dl-horizontal dd,
+	.dl-horizontal dt{margin-top: 0px; margin-bottom: 10px}
+
+	h1{font-size: 55px; margin-bottom: 40px;}
+	h2{font-family: "UniversLTW01-67BoldCn", Arial, sans-serif; font-size: 32px;}
+	h3{}
+
+	p{font-size: 16px; margin: 2em 0px; line-height: 1.6em;}
+
+	.main-content a{color: #5e5e5e; text-decoration: underline;}
+	.pull-quote{
+		border-left: none;
+		font-family: "UniversLTW01-57Condense 723821";
+		padding: 0px;
+	}
+	.pull-quote p{
+		font-size: 32px;
+	}
+	
+	.input-group {
+		margin-bottom: 1em;
+	}
+	
+	div.input-group input.form-control, div.input-group select.form-control {
+		width: 30em;
+		float: right;
+	}
+	
+	.input-group span.input-group-addon {
+		
+	}
+	
+	.input-group .radio, .input-group .checkbox {
+		padding-left: 2em;
+	}
+
+
+	</style>
+
+</head>
+<body>
+
+	<header role="banner" class="navbar">
+
+		<div class="container">
+
+			<div class="navbar-header">
+
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".ncsu-navbar-collapse">
+			   	 	<span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			  	</button>
+
+				<a class="navbar-brand" href="#">NC State University</a>
+
+			</div>
+
+			<nav role="navigation" class="collapse navbar-collapse ncsu-navbar-collapse">
+
+				<ul class="nav navbar-nav navbar-right">
+
+					<li><a href="#">About NC State</a></li>
+					<li><a href="#">Admissions</a></li>
+					<li><a href="#">Academics</a></li>
+					<li><a href="#">Research</a></li>
+					<li><a href="#">Partnerships</a></li>
+					<li><a href="#">Campus Life</a></li>
+					<li><a href="#">News</a></li>
+
+				</ul>
+
+			</nav>
+
+		</div>
+
+	</header>
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-md-4">
+				
+				<h3>Misc.</h3>
+
+				<div class="input-group">
+				  <span class="input-group-addon">@</span>
+				  <input type="text" class="form-control" placeholder="Twitter Handle">
+				</div>
+				
+				<br />
+				
+				<div class="input-group">
+			      <input type="text" class="form-control" placeholder="Search">
+			      <span class="input-group-btn">
+			        <button class="btn btn-default" type="button">Go</button>
+			      </span>
+			    </div>
+				
+			</div>
+			
+		</div>
+		
+		<br />
+				
+		<div class="row">
+
+			<div class="col-md-6">
+				
+				<h3>Login</h3>
+				
+				<form class="form-inline" role="form">
+				  <div class="form-group">
+				    <label class="sr-only" for="exampleInputEmail2">Email address</label>
+				    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+				  </div>
+				  <div class="form-group">
+				    <label class="sr-only" for="exampleInputPassword2">Password</label>
+				    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+				  </div>
+				  <div class="checkbox">
+				    <label>
+				      <input type="checkbox"> Remember me
+				    </label>
+				  </div>
+				  <button type="submit" class="btn btn-default">Sign in</button>
+				</form>
+				
+			</div>
+
+		</div>
+		
+		<br />
+		
+		<div class="row">
+
+			<div class="col-md-6">
+				
+				<h3>Contact Form</h3>
+		
+				<div class="input-group">
+					<span class="input-group-addon">First Name</span>
+			    	<input type="text" class="form-control" placeholder="John">
+				</div>
+				
+				<div class="input-group">
+					<span class="input-group-addon">Last Name</span>
+			    	<input type="text" class="form-control" placeholder="Doe">
+				</div>
+				
+				<div class="input-group">
+					<span class="input-group-addon">Mailing Address</span>
+			    	<input type="text" class="form-control" placeholder="3210 Faucette Drive">
+				</div>
+				
+				<div class="input-group">
+					<span class="input-group-addon">City</span>
+			    	<input type="text" class="form-control" placeholder="Raleigh">
+				</div>
+				
+				<div class="input-group">
+					<span class="input-group-addon">State</span>
+					<select class="form-control">
+						<option></option>
+						<option>NC</option>
+						<option>VA</option>
+						<option>SC</option>
+						<option>GA</option>
+						<option>TN</option>
+						<option>N/A</option>
+					</select>
+				</div>
+				
+				<div class="input-group">
+					<span class="input-group-addon">Zip Code</span>
+			    	<input type="text" class="form-control" placeholder="27695">
+				</div>
+				
+				<div class="input-group">
+					<span class="input-group-addon">Conference Pass</span>
+					<div class="radio">
+					  <label>
+					    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+					    1-Day
+					  </label>
+					</div>
+					<div class="radio">
+					  <label>
+					    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+					    2-Day
+					  </label>
+					</div>
+					<div class="radio">
+					  <label>
+					    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+					    3-Day
+					  </label>
+					</div>
+					<div class="radio">
+					  <label>
+					    <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+					    4-Day
+					  </label>
+					</div>
+				</div>
+				
+				<div class="input-group">
+					<span class="input-group-addon">Meal Preference</span>
+					<div class="checkbox">
+					  <label>
+					    <input type="checkbox" value="">
+					    Standard
+					  </label>
+					</div>
+					<div class="checkbox">
+					  <label>
+					    <input type="checkbox" value="">
+					    Vegetarian
+					  </label>
+					</div>
+				</div>
+		
+			</div>
+	
+		</div>
+
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="../dist/js/bootstrap.min.js" type="text/javascript"></script>
+
+</body>
+</html>
