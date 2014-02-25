@@ -12,36 +12,16 @@ h1, h2, h3, h4, h5, h6,
   font-weight: @headings-font-weight;
   line-height: @headings-line-height;
   color: @headings-color;
-
-  small,
-  .small {
-    font-weight: normal;
-    line-height: 1;
-    color: @headings-small-color;
-  }
 }
 
 h1, .h1,
 h2, .h2,
-h3, .h3 {
-  margin-top: @line-height-computed;
-  margin-bottom: (@line-height-computed / 2);
-
-  small,
-  .small {
-    font-size: 65%;
-  }
-}
+h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  margin-top: (@line-height-computed / 2);
+  margin-top: @line-height-computed;
   margin-bottom: (@line-height-computed / 2);
-
-  small,
-  .small {
-    font-size: 75%;
-  }
 }
 
 h1, .h1 { font-size: @font-size-h1; }
@@ -163,12 +143,12 @@ ul{
   padding-left: 0px; 
   line-height: 1.6em;
   li{ 
-		background: url("../../demo/red-arrow.gif") no-repeat 1px 6px; 
+		background: url("../../red-arrow.gif") no-repeat 1px 6px; 
 		padding-left: 16px; 
   	li{
-	  	background: url("../../demo/gray-arrow.gif") no-repeat 1px 6px;
+	  	background: url("../../gray-arrow.gif") no-repeat 1px 6px;
 	  li{
-			background: url("../../demo/gray-square.gif") no-repeat 1px 6px;
+			background: url("../../gray-square.gif") no-repeat 1px 6px;
 	  }
 	}
   }
@@ -193,9 +173,9 @@ ol li{
 		padding-left: 0px;
 
   	li{
-			background: url("red-arrow.gif") no-repeat 1px 6px; padding-left: 16px;
+			background: url("../../red-arrow.gif") no-repeat 1px 6px; padding-left: 16px;
 			li{
-			  background: url("gray-arrow.gif") no-repeat 1px 6px; padding-left: 16px;
+			  background: url("../../gray-arrow.gif") no-repeat 1px 6px; padding-left: 16px;
 			}
 	  }
   }
@@ -227,7 +207,7 @@ dd {
   line-height: @line-height-base;
 }
 dt {
-  font-weight: bold;
+  font-family: @univers-bold;
 }
 dd {
   margin-left: 0; // Undo browser default
