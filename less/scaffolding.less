@@ -83,9 +83,31 @@ img {
   .img-responsive();
 }
 
-// Rounded corners
-.img-rounded {
-  border-radius: @border-radius-large;
+figure, .figure{
+	margin: @line-height-computed 0;
+}
+
+.fig-half{
+	width: 50%;
+	> figcaption,
+	> .caption{
+		width: auto;
+	}
+}
+
+.fig-half.pull-left{
+	margin-right: @line-height-computed;
+}
+
+.fig-half.pull-right{
+	margin-left: @line-height-computed;
+}
+
+figcaption, .caption{
+	font-size: ((@font-size-small * 12) / 14);
+	color: #666;
+	margin-top: (@line-height-computed/2);
+	width: 75%;
 }
 
 // Image thumbnails
@@ -102,12 +124,6 @@ img {
   // Keep them at most 100% wide
   .img-responsive(inline-block);
 }
-
-// Perfect circle
-.img-circle {
-  border-radius: 50%; // set radius in percents
-}
-
 
 // Horizontal rules
 
