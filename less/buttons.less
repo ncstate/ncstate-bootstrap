@@ -15,7 +15,7 @@
   text-decoration: none;
   cursor: pointer;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  border: 1px solid transparent;
+  border: none;
   white-space: nowrap;
   .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @border-radius-base);
   .user-select(none);
@@ -73,6 +73,30 @@
 // Danger and error appear as red
 .btn-danger {
   .button-variant(@btn-danger-color; @btn-danger-bg; @btn-danger-border);
+}
+
+//## NC State Button Classes
+
+.btn-red {
+  .button-variant(@btn-red-color; @btn-red-bg; @btn-red-border; @btn-red-active; @btn-red-disabled);
+}
+.btn-renyolds {
+  .button-variant(@btn-renyolds-color; @btn-renyolds-bg; @btn-renyolds-border; @btn-renyolds-active; @btn-renyolds-disabled);
+}
+.btn-orange {
+  .button-variant(@btn-orange-color; @btn-orange-bg; @btn-orange-border; @btn-orange-active; @btn-orange-disabled);
+}
+.btn-yellow {
+  .button-variant(@btn-yellow-color; @btn-yellow-bg; @btn-yellow-border; @btn-yellow-active; @btn-yellow-disabled);
+}
+.btn-green {
+  .button-variant(@btn-green-color; @btn-green-bg; @btn-green-border; @btn-green-active; @btn-green-disabled);
+}
+.btn-blue {
+  .button-variant(@btn-blue-color; @btn-blue-bg; @btn-blue-border; @btn-blue-active; @btn-blue-disabled);
+}
+.btn-indigo {
+  .button-variant(@btn-indigo-color; @btn-indigo-bg; @btn-indigo-border; @btn-indigo-active; @btn-indigo-disabled);
 }
 
 
