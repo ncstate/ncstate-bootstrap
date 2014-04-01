@@ -50,6 +50,11 @@ a {
   &:hover,
   &:focus {
     color: @link-hover-color;
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: @gray-light;
     text-decoration: underline;
   }
 
@@ -116,7 +121,7 @@ figcaption, .caption{
 .img-thumbnail {
   line-height: @line-height-base;
   background-color: @thumbnail-bg;
-  //border-radius: @thumbnail-border-radius;
+  border-radius: @thumbnail-border-radius;
   .transition(all .2s ease-in-out);
 
   // Keep them at most 100% wide

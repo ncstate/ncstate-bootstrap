@@ -98,20 +98,20 @@
 
 // Single side border-radius
 .border-top-radius(@radius) {
- // border-top-right-radius: @radius;
- //  border-top-left-radius: @radius;
+  border-top-right-radius: @radius;
+  border-top-left-radius: @radius;
 }
 .border-right-radius(@radius) {
-  //border-bottom-right-radius: @radius;
-  //   border-top-right-radius: @radius;
+  border-bottom-right-radius: @radius;
+  border-top-right-radius: @radius;
 }
 .border-bottom-radius(@radius) {
- // border-bottom-right-radius: @radius;
- //  border-bottom-left-radius: @radius;
+  border-bottom-right-radius: @radius;
+  border-bottom-left-radius: @radius;
 }
 .border-left-radius(@radius) {
- // border-bottom-left-radius: @radius;
-  //   border-top-left-radius: @radius;
+  border-bottom-left-radius: @radius;
+  border-top-left-radius: @radius;
 }
 
 // Drop shadows
@@ -120,8 +120,8 @@
 //   supported browsers that have box shadow capabilities now support the
 //   standard `box-shadow` property.
 .box-shadow(@shadow) {
-  //-webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
-  //        box-shadow: @shadow;
+  -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+          box-shadow: @shadow;
 }
 
 // Transitions
@@ -498,10 +498,48 @@
 // -------------------------
 // Easily pump out default styles, as well as :hover, :focus, :active,
 // and disabled options for all buttons
-.button-variant(@color; @base; @border; @active: darken(@base, 8%); @disabled: @base;) {
+.button-variant(@color; @background; @border) {
+  color: @color;
+  background-color: @background;
+  border-color: @border;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    color: @color;
+    background-color: darken(@background, 10%);
+        border-color: darken(@border, 12%);
+  }
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: @background;
+          border-color: @border;
+    }
+  }
+
+  .badge {
+    color: @background;
+    background-color: @color;
+  }
+}
+
+.ncsu-button-variant(@color; @base; @active; @disabled) {
   color: @color;
   background-color: @base;
-  //border-color: @border;
+  border: none;
 
   &:hover,
   &:focus,
@@ -510,7 +548,6 @@
   .open .dropdown-toggle& {
     color: @color;
     background-color: @active;
-        //border-color: darken(@border, 12%);
   }
   &:active,
   &.active,
@@ -526,7 +563,6 @@
     &:active,
     &.active {
       background-color: @disabled;
-          //border-color: @border;
     }
   }
 
@@ -542,7 +578,7 @@
   padding: @padding-vertical @padding-horizontal;
   font-size: @font-size;
   line-height: @line-height;
-  //border-radius: @border-radius;
+  border-radius: @border-radius;
 }
 
 // Pagination
@@ -557,13 +593,13 @@
     &:first-child {
       > a,
       > span {
-        //.border-left-radius(@border-radius);
+        .border-left-radius(@border-radius);
       }
     }
     &:last-child {
       > a,
       > span {
-        //.border-right-radius(@border-radius);
+        .border-right-radius(@border-radius);
       }
     }
   }
@@ -909,7 +945,7 @@
   padding: @padding-vertical @padding-horizontal;
   font-size: @font-size;
   line-height: @line-height;
- // border-radius: @border-radius;
+  border-radius: @border-radius;
 
   select& {
     height: @input-height;
