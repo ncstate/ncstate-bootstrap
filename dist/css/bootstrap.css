@@ -342,7 +342,7 @@ figcaption,
   width: 75%;
   margin-top: 11px;
   font-size: 10.28571429px;
-  color: #666;
+  color: inherit;
 }
 .img-thumbnail {
   display: inline-block;
@@ -402,7 +402,6 @@ h3,
   font-family: "UniversCondensed", Arial, sans-serif;
   font-size: 21px;
   font-weight: bold;
-  color: #000;
 }
 h4,
 .h4 {
@@ -4136,7 +4135,7 @@ a.thumbnail.active {
 }
 .thumbnail .caption {
   padding: 9px;
-  color: #333;
+  color: inherit;
 }
 .alert {
   padding: 15px;
