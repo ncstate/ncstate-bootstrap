@@ -2663,10 +2663,10 @@ input[type="button"].btn-block {
   content: "g";
 }
 .glyphicon-check:before {
-  content: "m";
+  content: "n";
 }
 .glyphicon-x:before {
-  content: "n";
+  content: "m";
 }
 .caret {
   display: inline-block;
