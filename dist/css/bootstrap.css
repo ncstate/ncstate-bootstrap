@@ -2672,6 +2672,12 @@ input[type="button"].btn-block {
 .glyphicon-plus:before {
   content: "g";
 }
+.glyphicon-check:before {
+  content: "n";
+}
+.glyphicon-x:before {
+  content: "m";
+}
 .caret {
   display: inline-block;
   width: 0;
