@@ -8,7 +8,9 @@
 - glyphicon-left-arrow
 - glyphicon-left-arrow-no-bkgrnd
 - glyphicon-right-arrow
-- glyphicon-right-arrow-no-bkgrnd{
+- glyphicon-right-arrow-no-bkgrnd
 - glyphicon-search
 - glyphicon-search-nobkgrnd
 - glyphicon-plus
+- glyphicon-check
+- glyphicon-x
