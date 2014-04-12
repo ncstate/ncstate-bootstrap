@@ -389,6 +389,34 @@ h6,
   line-height: 1.3;
   color: inherit;
 }
+h1 small,
+.h1 small,
+h2 small,
+.h2 small,
+h3 small,
+.h3 small,
+h4 small,
+.h4 small,
+h5 small,
+.h5 small,
+h6 small,
+.h6 small,
+h1 .small,
+.h1 .small,
+h2 .small,
+.h2 .small,
+h3 .small,
+.h3 .small,
+h4 .small,
+.h4 .small,
+h5 .small,
+.h5 .small,
+h6 .small,
+.h6 .small {
+  font-weight: normal;
+  line-height: 1;
+  color: #999;
+}
 h1,
 .h1 {
   font-size: 52px;
@@ -403,22 +431,32 @@ h3,
   font-size: 21px;
   font-weight: bold;
 }
+h3 small,
+.h3 small,
+h3 .small,
+.h3 .small {
+  font-size: 65%;
+}
 h4,
 .h4 {
   font-size: 20px;
 }
 h5,
 .h5 {
-  font-family: "UniversRoman", Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
 }
 h6,
 .h6 {
-  font-family: "UniversRoman", Arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
+}
+h6 small,
+.h6 small,
+h6 .small,
+.h6 .small {
+  font-size: 75%;
 }
 p {
   margin: 0 0 11px;
@@ -436,7 +474,7 @@ p {
 }
 small,
 .small {
-  font-size: 85%;
+  font-size: 65%;
 }
 cite {
   font-style: normal;
@@ -463,28 +501,28 @@ a.text-primary:hover {
   color: #900;
 }
 .text-success {
-  color: #5e6821;
+  color: #a4b53a;
 }
 a.text-success:hover {
-  color: #3b4115;
+  color: #818e2e;
 }
 .text-info {
-  color: #274a56;
+  color: #47869c;
 }
 a.text-info:hover {
-  color: #172c33;
+  color: #376879;
 }
 .text-warning {
-  color: #7e411a;
+  color: #d26c2c;
 }
 a.text-warning:hover {
-  color: #542b11;
+  color: #a85623;
 }
 .text-danger {
-  color: #551212;
+  color: #a92325;
 }
 a.text-danger:hover {
-  color: #2a0909;
+  color: #7f1a1c;
 }
 .bg-primary {
   color: #fff;
@@ -543,13 +581,20 @@ ul {
 }
 ul li {
   padding-left: 16px;
-  background: url("../../red-arrow.gif") no-repeat 1px 6px;
+}
+ul li:before {
+  margin-left: -18px;
+  font-family: ncsu-icons;
+  color: #c00;
+  content: "i  ";
+
+  speak: none;
 }
 ul li li {
-  background: url("../../gray-arrow.gif") no-repeat 1px 6px;
+  background: url("../img/gray-arrow.gif") no-repeat 1px 6px;
 }
 ul li li li {
-  background: url("../../gray-square.gif") no-repeat 1px 6px;
+  background: url("../img/gray-square.gif") no-repeat 1px 6px;
 }
 ul li,
 ol li {
@@ -566,11 +611,11 @@ ol li {
 }
 .list-unstyled li li {
   padding-left: 16px;
-  background: url("../../red-arrow.gif") no-repeat 1px 6px;
+  background: url("../img/red-arrow.gif") no-repeat 1px 6px;
 }
 .list-unstyled li li li {
   padding-left: 16px;
-  background: url("../../gray-arrow.gif") no-repeat 1px 6px;
+  background: url("../img/gray-arrow.gif") no-repeat 1px 6px;
 }
 .list-inline {
   padding-left: 0;
@@ -583,11 +628,11 @@ ol li {
 }
 .list-inline li li {
   padding-left: 16px;
-  background: url("../../red-arrow.gif") no-repeat 1px 6px;
+  background: url("../img/red-arrow.gif") no-repeat 1px 6px;
 }
 .list-inline li li li {
   padding-left: 16px;
-  background: url("../../gray-arrow.gif") no-repeat 1px 6px;
+  background: url("../img/gray-arrow.gif") no-repeat 1px 6px;
 }
 .list-inline > li {
   display: inline-block;
@@ -1843,21 +1888,21 @@ select[multiple].input-lg {
 .has-success .checkbox,
 .has-success .radio-inline,
 .has-success .checkbox-inline {
-  color: #5e6821;
+  color: #a4b53a;
 }
 .has-success .form-control {
-  border-color: #5e6821;
+  border-color: #a4b53a;
 }
 .has-success .form-control:focus {
-  border-color: #3b4115;
+  border-color: #818e2e;
 }
 .has-success .input-group-addon {
-  color: #5e6821;
-  background-color: #dae2a6;
-  border-color: #5e6821;
+  color: #a4b53a;
+  background-color: #fafbf3;
+  border-color: #a4b53a;
 }
 .has-success .form-control-feedback {
-  color: #5e6821;
+  color: #a4b53a;
 }
 .has-warning .help-block,
 .has-warning .control-label,
@@ -1865,21 +1910,21 @@ select[multiple].input-lg {
 .has-warning .checkbox,
 .has-warning .radio-inline,
 .has-warning .checkbox-inline {
-  color: #7e411a;
+  color: #d26c2c;
 }
 .has-warning .form-control {
-  border-color: #7e411a;
+  border-color: #d26c2c;
 }
 .has-warning .form-control:focus {
-  border-color: #542b11;
+  border-color: #a85623;
 }
 .has-warning .input-group-addon {
-  color: #7e411a;
-  background-color: #edc4aa;
-  border-color: #7e411a;
+  color: #d26c2c;
+  background-color: #fffefe;
+  border-color: #d26c2c;
 }
 .has-warning .form-control-feedback {
-  color: #7e411a;
+  color: #d26c2c;
 }
 .has-error .help-block,
 .has-error .control-label,
@@ -1887,21 +1932,21 @@ select[multiple].input-lg {
 .has-error .checkbox,
 .has-error .radio-inline,
 .has-error .checkbox-inline {
-  color: #551212;
+  color: #a92325;
 }
 .has-error .form-control {
-  border-color: #551212;
+  border-color: #a92325;
 }
 .has-error .form-control:focus {
-  border-color: #2a0909;
+  border-color: #7f1a1c;
 }
 .has-error .input-group-addon {
-  color: #551212;
-  background-color: #e58082;
-  border-color: #551212;
+  color: #a92325;
+  background-color: #f6d5d5;
+  border-color: #a92325;
 }
 .has-error .form-control-feedback {
-  color: #551212;
+  color: #a92325;
 }
 .form-control-static {
   margin-bottom: 0;
@@ -2014,8 +2059,8 @@ select[multiple].input-lg {
 fieldset[disabled] .btn {
   pointer-events: none;
   cursor: not-allowed;
-  filter: alpha(opacity=65);
-  opacity: .65;
+  filter: alpha(opacity=35);
+  opacity: .35;
 }
 .btn-default {
   color: #333;
@@ -2052,7 +2097,7 @@ fieldset[disabled] .btn-default:active,
 .btn-default[disabled].active,
 fieldset[disabled] .btn-default.active {
   background-color: #fff;
-  border-color: #ccc;
+  border-color: #fff;
 }
 .btn-default .badge {
   color: #fff;
@@ -2092,8 +2137,8 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #c00;
-  border-color: #b30000;
+  background-color: #f33;
+  border-color: #ff1a1a;
 }
 .btn-primary .badge {
   color: #c00;
@@ -2133,8 +2178,8 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-  background-color: #a4b53a;
-  border-color: #93a234;
+  background-color: #cad67f;
+  border-color: #c2d06c;
 }
 .btn-success .badge {
   color: #a4b53a;
@@ -2174,8 +2219,8 @@ fieldset[disabled] .btn-info:active,
 .btn-info.disabled.active,
 .btn-info[disabled].active,
 fieldset[disabled] .btn-info.active {
-  background-color: #47869c;
-  border-color: #3f778a;
+  background-color: #83b5c6;
+  border-color: #71aabe;
 }
 .btn-info .badge {
   color: #47869c;
@@ -2215,8 +2260,8 @@ fieldset[disabled] .btn-warning:active,
 .btn-warning.disabled.active,
 .btn-warning[disabled].active,
 fieldset[disabled] .btn-warning.active {
-  background-color: #d26c2c;
-  border-color: #bd6128;
+  background-color: #e4a680;
+  border-color: #e0986b;
 }
 .btn-warning .badge {
   color: #d26c2c;
@@ -2256,8 +2301,8 @@ fieldset[disabled] .btn-danger:active,
 .btn-danger.disabled.active,
 .btn-danger[disabled].active,
 fieldset[disabled] .btn-danger.active {
-  background-color: #a92325;
-  border-color: #941f20;
+  background-color: #dc5658;
+  border-color: #d84143;
 }
 .btn-danger .badge {
   color: #a92325;
@@ -2650,22 +2695,22 @@ input[type="button"].btn-block {
 .glyphicon-download:before {
   content: "d";
 }
-.glyphicon-left-arrow:before {
+.glyphicon-left-arrow-bkgrnd:before {
   content: "e";
 }
-.glyphicon-left-arrow-no-bkgrnd:before {
+.glyphicon-left-arrow:before {
   content: "f";
 }
-.glyphicon-right-arrow:before {
+.glyphicon-right-arrow-bkgrnd:before {
   content: "h";
 }
-.glyphicon-right-arrow-no-bkgrnd:before {
+.glyphicon-right-arrow:before {
   content: "i";
 }
-.glyphicon-search:before {
+.glyphicon-search-bkgrnd:before {
   content: "j";
 }
-.glyphicon-search-nobkgrnd:before {
+.glyphicon-search:before {
   content: "k";
 }
 .glyphicon-plus:before {
@@ -2676,6 +2721,15 @@ input[type="button"].btn-block {
 }
 .glyphicon-x:before {
   content: "m";
+}
+.glyphicon-menu-bkgrnd:before {
+  content: "l";
+}
+.glyphicon-menu:before {
+  content: "o";
+}
+.glyphicon-link:before {
+  content: "p";
 }
 .caret {
   display: inline-block;
@@ -4765,6 +4819,7 @@ a.list-group-item-danger.active:focus {
 }
 .close {
   float: right;
+  font-family: "ncsu-icons";
   font-size: 21px;
   font-weight: bold;
   line-height: 1;
