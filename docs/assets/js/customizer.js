@@ -18,7 +18,7 @@ window.onload = function () { // wait for load in a dumb way because B-0
   function showError(msg, err) {
     $('<div id="bsCustomizerAlert" class="bs-customizer-alert">\
         <div class="container">\
-          <a href="#bsCustomizerAlert" data-dismiss="alert" class="close pull-right">&times;</a>\
+          <a href="#bsCustomizerAlert" data-dismiss="alert" class="close pull-right">x</a>\
           <p class="bs-customizer-alert-text"><span class="glyphicon glyphicon-warning-sign"></span>' + msg + '</p>' +
           (err.extract ? '<pre class="bs-customizer-alert-extract">' + err.extract.join('\n') + '</pre>' : '') + '\
         </div>\
