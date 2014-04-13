@@ -583,14 +583,21 @@ ul li {
   padding-left: 16px;
 }
 ul li:before {
+  padding-right: .3em;
   font-family: 'ncsu-icons';
   color: #c00;
   content: "i";
 
   speak: none;
 }
-ul li ul li:before {
+ul li li:before {
   color: #999;
+}
+ul li li li {
+  background: url("../img/gray-square.gif") no-repeat 1px 6px;
+}
+ul li li li:before {
+  content: none;
 }
 ul li,
 ol li {
@@ -599,6 +606,7 @@ ol li {
 .list-unstyled {
   padding-left: 0;
   list-style: none;
+  background: none;
 }
 .list-unstyled li:before {
   content: none;
@@ -606,6 +614,7 @@ ol li {
 .list-inline {
   padding-left: 0;
   list-style: none;
+  background: none;
 }
 .list-inline li:before {
   content: none;
