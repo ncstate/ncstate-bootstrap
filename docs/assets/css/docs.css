@@ -169,6 +169,12 @@ body {
   padding-left: 0;
   color: #999;
 }
+.footer-links a:visited {
+  color: #c00;
+}
+.footer-links a:hover {
+  color: #900;
+}
 .footer-links li {
   display: inline;
   padding: 0 2px;
@@ -704,16 +710,23 @@ h1[id] {
 }
 
 /* Framework colors */
-.color-swatches .gray-darker   { background-color: #222; }
-.color-swatches .gray-dark     { background-color: #333; }
-.color-swatches .gray          { background-color: #555; }
-.color-swatches .gray-light    { background-color: #999; }
-.color-swatches .gray-lighter  { background-color: #eee; }
-.color-swatches .brand-primary { background-color: #428bca; }
-.color-swatches .brand-success { background-color: #5cb85c; }
-.color-swatches .brand-warning { background-color: #f0ad4e; }
-.color-swatches .brand-danger  { background-color: #d9534f; }
-.color-swatches .brand-info    { background-color: #5bc0de; }
+.color-swatches .gray-darker     { background-color: #222; }
+.color-swatches .gray-dark       { background-color: #333; }
+.color-swatches .gray            { background-color: #555; }
+.color-swatches .gray-light      { background-color: #999; }
+.color-swatches .gray-lighter    { background-color: #eee; }
+.color-swatches .brand-primary,
+.color-swatches .brand-red	     { background-color: #cc0000; }
+.color-swatches .brand-success,
+.color-swatches .brand-green     { background-color: #a4b53a; }
+.color-swatches .brand-warning,
+.color-swatches .brand-orange    { background-color: #d26c2c; }
+.color-swatches .brand-danger,
+.color-swatches .brand-reynolds  { background-color: #a92325; }
+.color-swatches .brand-info,
+.color-swatches .brand-blue      { background-color: #47869c; }
+.color-swatches .brand-yellow	 { background-color: #fde148; }
+.color-swatches .brand-indigo	 { background-color: #4156a1; }
 
 /* Docs colors */
 .color-swatches .bs-purple          { background-color: #563d7c; }

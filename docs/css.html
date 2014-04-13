@@ -2823,7 +2823,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
   <p>Third party compilation tools may work with Bootstrap, but they are not supported by our core team.</p>
 
   <h2 id="less-variables">Variables</h2>
-  <p>Variables are used throughout the entire project as a way to centralize and share commonly used values like colors, spacing, or font stacks. For a complete breakdown, please see <a href="../customize/#less-variables-section">the Customizer</a>.</p>
+  <p>Variables are used throughout the entire project as a way to centralize and share commonly used values like colors, spacing, or font stacks. For a complete breakdown, please see the variables.less file in the project.</p>
 
   <h3 id="less-variables-colors">Colors</h3>
   <p>Easily make use of two color schemes: grayscale and semantic. Grayscale colors provide quick access to commonly used shades of black while semantic include various colors assigned to meaningful contextual values.</p>
@@ -2846,6 +2846,27 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 
   <div class="bs-example">
     <div class="color-swatches">
+      <div class="color-swatch brand-red"></div>
+      <div class="color-swatch brand-reynolds"></div>
+      <div class="color-swatch brand-orange"></div>
+      <div class="color-swatch brand-yellow"></div>
+      <div class="color-swatch brand-green"></div>
+      <div class="color-swatch brand-blue"></div>
+      <div class="color-swatch brand-indigo"></div>
+    </div>
+  </div>
+{% highlight scss %}
+@brand-red:         	#cc0000;
+@brand-renyolds:        #a92325;
+@brand-orange:          #d26c2c;
+@brand-yellow:         	#fde148;
+@brand-green:         	#a4b53a;
+@brand-blue:         	#47869c;
+@brand-indigo:          #4156a1;
+{% endhighlight %}
+
+  <div class="bs-example">
+    <div class="color-swatches">
       <div class="color-swatch brand-primary"></div>
       <div class="color-swatch brand-success"></div>
       <div class="color-swatch brand-info"></div>
@@ -2854,11 +2875,11 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
     </div>
   </div>
 {% highlight scss %}
-@brand-primary: #428bca;
-@brand-success: #5cb85c;
-@brand-info:    #5bc0de;
-@brand-warning: #f0ad4e;
-@brand-danger:  #d9534f;
+@brand-primary:         @brand-red;
+@brand-success:         @brand-green;
+@brand-info:            @brand-blue;
+@brand-warning:         @brand-orange;
+@brand-danger:          @brand-renyolds;
 {% endhighlight %}
 
   <p>Use any of these color variables as they are or reassign them to more meaningful variables for your project.</p>
@@ -2906,8 +2927,14 @@ a {
   <h3 id="less-variables-typography">Typography</h3>
   <p>Easily set your type face, text size, leading, and more with a few quick variables. Bootstrap makes use of these as well to provide easy typographic mixins.</p>
 {% highlight scss %}
-@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
-@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@univers:                 "UniversRoman", Arial, sans-serif;
+@univers-condensed:       "UniversCondensed", Arial, sans-serif;
+@glypha-roman:            "Glypha LT W01 55 Roman", Georgia, serif;
+@glyph-icons:             "ncsu-icons";
+
+@font-family-sans-serif:  @univers;
+@font-family-serif:       @glypha-roman;
+
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
@@ -2915,19 +2942,19 @@ a {
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
 @font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
 
-@font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
+@font-size-h1:            floor((@font-size-base * 3.75)); // ~52px
 @font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
-@font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
-@font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
-@font-size-h5:            @font-size-base;
-@font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
+@font-size-h3:            ceil((@font-size-base * 1.5)); // ~21px
+@font-size-h4:            ceil((@font-size-base * 1.375)); // ~20px
+@font-size-h5:            @font-size-base;;
+@font-size-h6:            @font-size-base;
 
-@line-height-base:        1.428571429; // 20/14
+@line-height-base:        1.6; // 20/14
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
 
 @headings-font-family:    inherit;
 @headings-font-weight:    500;
-@headings-line-height:    1.1;
+@headings-line-height:    1.3;
 @headings-color:          inherit;
 {% endhighlight %}
 
@@ -2941,30 +2968,30 @@ a {
   <h3 id="less-variables-components">Components</h3>
   <p>Components throughout Bootstrap make use of some default variables for setting common values. Here are the most commonly used.</p>
 {% highlight scss %}
-@padding-base-vertical:          6px;
-@padding-base-horizontal:        12px;
+@padding-base-vertical:     6px;
+@padding-base-horizontal:   12px;
 
-@padding-large-vertical:         10px;
-@padding-large-horizontal:       16px;
+@padding-large-vertical:    10px;
+@padding-large-horizontal:  16px;
 
-@padding-small-vertical:         5px;
-@padding-small-horizontal:       10px;
+@padding-small-vertical:    5px;
+@padding-small-horizontal:  10px;
 
-@padding-xs-vertical:            1px;
-@padding-xs-horizontal:          5px;
+@padding-xs-vertical:       1px;
+@padding-xs-horizontal:     5px;
 
-@line-height-large:              1.33;
-@line-height-small:              1.5;
+@line-height-large:         1.33;
+@line-height-small:         1.5;
 
-@border-radius-base:             4px;
-@border-radius-large:            6px;
-@border-radius-small:            3px;
+@border-radius-base:        1px;
+@border-radius-large:       1px;
+@border-radius-small:       1px;
 
-@component-active-color:         #fff;
-@component-active-bg:            @brand-primary;
+@component-active-color:    #fff;
+@component-active-bg:       @brand-primary;
 
-@caret-width-base:               4px;
-@caret-width-large:              5px;
+@caret-width-base:          4px;
+@caret-width-large:         5px;
 {% endhighlight %}
 
 
@@ -3167,29 +3194,6 @@ a {
           column-gap: @gap;
 }
 {% endhighlight %}
-
-  <h3 id="less-mixins-gradients">Gradients</h3>
-  <p>Easily turn any two colors into a background gradient. Get more advanced and set a direction, use three colors, or use a radial gradient. With a single mixin you get all the prefixed syntaxes you'll need.</p>
-{% highlight scss %}
-#gradient > .vertical(#333; #000);
-#gradient > .horizontal(#333; #000);
-#gradient > .radial(#333; #000);
-{% endhighlight %}
-  <p>You can also specify the angle of a standard two-color, linear gradient:</p>
-{% highlight scss %}
-#gradient > .directional(#333; #000; 45deg);
-{% endhighlight %}
-  <p>If you need a barber-stripe style gradient, that's easy, too. Just specify a single color and we'll overlay a translucent white stripe.</p>
-{% highlight scss %}
-#gradient > .striped(#333; #000; 45deg);
-{% endhighlight %}
-  <p>Up the ante and use three colors instead. Set the first color, the second color, the second color's color stop (a decimal value like 0.25), and the third color with these mixins:</p>
-{% highlight scss %}
-#gradient > .vertical-three-colors(#777; #333; .25; #000);
-#gradient > .horizontal-three-colors(#777; #333; .25; #000);
-{% endhighlight %}
-  <p><strong>Heads up!</strong> Should you ever need to remove a gradient, be sure to remove any IE-specific <code>filter</code> you may have added. You can do that by using the <code>.reset-filter()</code> mixin alongside <code>background-image: none;</code>.</p>
-
 
   <h2 id="less-mixins-utility">Utility mixins</h2>
   <p>Utility mixins are mixins that combine otherwise unrelated CSS properties to achieve a specific goal or task.</p>
