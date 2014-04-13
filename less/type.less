@@ -155,22 +155,20 @@ ul{
   padding-left: 0px; 
   line-height: 1.6em;
   li{ 
-		//background: url("../img/red-arrow.gif") no-repeat 1px 6px; 
 		padding-left: 16px;
-	&:before {
-		font-family: ncsu-icons;
-		content: "i  ";
-		speak: none;
-		color: #cc0000;
-		margin-left: -18px;
-	}
 		
-  	li{
-	  	background: url("../img/gray-arrow.gif") no-repeat 1px 6px;
-	  li{
-			background: url("../img/gray-square.gif") no-repeat 1px 6px;
-	  }
-	}
+		&:before {
+			font-family: 'ncsu-icons';
+			content: "i";
+			speak: none;
+			color: #cc0000;
+		}
+		
+	  	ul li{
+			&:before {
+				color: #999;
+			}
+		}
   }
 }
 
@@ -183,21 +181,10 @@ ol li{
 
 // Unstyled keeps list items block level, just removes default browser padding and list-style
 .list-unstyled {
-  background: none;
   padding-left: 0;
   list-style: none;
-	
-	li{
-		
-		background: none;
-		padding-left: 0px;
-
-  	li{
-			background: url("../img/red-arrow.gif") no-repeat 1px 6px; padding-left: 16px;
-			li{
-			  background: url("../img/gray-arrow.gif") no-repeat 1px 6px; padding-left: 16px;
-			}
-	  }
+  li:before {
+	  content: none;
   }
 }
 
