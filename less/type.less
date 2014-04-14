@@ -152,20 +152,21 @@ ol{
 
 ul{ 
   list-style: none; 
-  padding-left: 0px; 
+  padding-left: 1.3em; 
   line-height: 1.6em;
-  li{ 
-		padding-left: 16px;
-		
+
+  li {
+
 		&:before {
 			font-family: 'ncsu-icons';
 			content: "i";
 			speak: none;
 			color: #cc0000;
 			padding-right: 0.3em;
+      margin-left: -1.3em;
 		}
 		
-	  	li {
+  	li {
 			&:before {
 				color: #999;
 			}
@@ -179,9 +180,10 @@ ul{
   }
 }
 
-ul li,
-ol li{
-	margin: 10px 0px;
+.ncstate-padded-list {
+	li {
+    margin: 10px 0px;
+  }
 }
 
 // List options
@@ -191,7 +193,7 @@ ol li{
   background: none;
   padding-left: 0;
   list-style: none;
-  li:before {
+  > li:before {
 	  content: none;
   }
 }

@@ -575,15 +575,13 @@ ol {
   padding-left: 32px;
 }
 ul {
-  padding-left: 0;
+  padding-left: 1.3em;
   line-height: 1.6em;
   list-style: none;
 }
-ul li {
-  padding-left: 16px;
-}
 ul li:before {
   padding-right: .3em;
+  margin-left: -1.3em;
   font-family: 'ncsu-icons';
   color: #c00;
   content: "i";
@@ -599,8 +597,7 @@ ul li li li {
 ul li li li:before {
   content: none;
 }
-ul li,
-ol li {
+.ncstate-padded-list li {
   margin: 10px 0;
 }
 .list-unstyled {
@@ -608,7 +605,7 @@ ol li {
   list-style: none;
   background: none;
 }
-.list-unstyled li:before {
+.list-unstyled > li:before {
   content: none;
 }
 .list-inline {
@@ -616,7 +613,7 @@ ol li {
   list-style: none;
   background: none;
 }
-.list-inline li:before {
+.list-inline > li:before {
   content: none;
 }
 .list-inline > li {
@@ -2762,11 +2759,15 @@ input[type="button"].btn-block {
   margin: 2px 0 0;
   font-size: 14px;
   list-style: none;
+  background: none;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, .15);
   border-radius: 1px;
+}
+.dropdown-menu li:before {
+  content: none;
 }
 .dropdown-menu.pull-right {
   right: 0;
@@ -3221,7 +3222,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li {
   position: relative;
   display: block;
-  padding: left: 0;
+  padding-left: 0;
   background: none;
 }
 .nav > li > a {
@@ -3908,6 +3909,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-left: 0;
   background: none;
 }
+.pagination > li:before {
+  content: none;
+}
 .pagination > li > a,
 .pagination > li > span {
   position: relative;
@@ -4000,6 +4004,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .pager li {
   display: inline;
+  background-image: none;
+}
+.pager li:before {
+  content: none;
 }
 .pager li > a,
 .pager li > span {
@@ -4007,7 +4015,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding: 5px 14px;
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 15px;
+  border-radius: 1px;
 }
 .pager li > a:hover,
 .pager li > a:focus {
@@ -4032,7 +4040,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .label {
   display: inline;
-  padding: .2em .6em .3em;
+  padding: .5em .6em .3em;
   font-size: 75%;
   font-weight: bold;
   line-height: 1;
@@ -4100,7 +4108,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .badge {
   display: inline-block;
   min-width: 10px;
-  padding: 3px 7px;
+  padding-top: 3px;
+  padding-right: 7px;
+  padding-bottom: 1px;
+  padding-left: 7px;
   font-size: 12px;
   font-weight: bold;
   line-height: 1;
@@ -4209,6 +4220,9 @@ a.thumbnail.active {
 }
 .alert .alert-link {
   font-weight: bold;
+}
+.alert .alert-link:hover {
+  text-decoration: underline;
 }
 .alert > p,
 .alert > ul {
@@ -4369,18 +4383,27 @@ a.thumbnail.active {
 .media-list {
   padding-left: 0;
   list-style: none;
+  background-image: none;
+}
+.media-list li:before {
+  content: none;
 }
 .list-group {
   padding-left: 0;
   margin-bottom: 20px;
+  background-image: none;
+}
+.list-group li:before {
+  content: none;
 }
 .list-group-item {
   position: relative;
   display: block;
   padding: 10px 15px;
+  margin-top: 0;
   margin-bottom: -1px;
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #bbb;
 }
 .list-group-item:first-child {
   border-top-left-radius: 1px;
@@ -5267,19 +5290,19 @@ button.close {
 }
 .carousel-control .icon-prev,
 .carousel-control .icon-next,
-.carousel-control .glyphicon-chevron-left,
-.carousel-control .glyphicon-chevron-right {
+.carousel-control .glyphicon-left-arrow,
+.carousel-control .glyphicon-right-arrow {
   position: absolute;
   top: 50%;
   z-index: 5;
   display: inline-block;
 }
 .carousel-control .icon-prev,
-.carousel-control .glyphicon-chevron-left {
+.carousel-control .glyphicon-left-arrow {
   left: 50%;
 }
 .carousel-control .icon-next,
-.carousel-control .glyphicon-chevron-right {
+.carousel-control .glyphicon-right-arrow {
   right: 50%;
 }
 .carousel-control .icon-prev,
@@ -5306,6 +5329,7 @@ button.close {
   margin-left: -30%;
   text-align: center;
   list-style: none;
+  background-image: none;
 }
 .carousel-indicators li {
   display: inline-block;
@@ -5317,7 +5341,7 @@ button.close {
   background-color: #000 \9;
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid #fff;
-  border-radius: 10px;
+  border-radius: 1px;
 }
 .carousel-indicators .active {
   width: 12px;
@@ -5341,8 +5365,8 @@ button.close {
   text-shadow: none;
 }
 @media screen and (min-width: 768px) {
-  .carousel-control .glyphicons-chevron-left,
-  .carousel-control .glyphicons-chevron-right,
+  .carousel-control .glyphicon-left-arrow,
+  .carousel-control .glyphicon-right-arrow,
   .carousel-control .icon-prev,
   .carousel-control .icon-next {
     width: 30px;

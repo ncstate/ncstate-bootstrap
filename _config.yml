@@ -18,8 +18,7 @@ exclude:          ["vendor"]
 
 # Custom vars
 current_version:  3.1.0
-repo:             https://github.com/twbs/bootstrap
-sass_repo:        https://github.com/twbs/bootstrap-sass
+repo:             https://github.com/ncsuwebcomm/ncstate-bootstrap/
 
 download:
   source:         https://github.com/twbs/bootstrap/archive/v3.1.0.zip

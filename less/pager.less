@@ -11,6 +11,10 @@
   &:extend(.clearfix all);
   li {
     display: inline;
+    background-image: none;
+    &:before {
+      content: none;
+    }
     > a,
     > span {
       display: inline-block;
