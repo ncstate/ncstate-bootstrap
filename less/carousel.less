@@ -100,19 +100,19 @@
   // Toggles
   .icon-prev,
   .icon-next,
-  .glyphicon-chevron-left,
-  .glyphicon-chevron-right {
+  .glyphicon-left-arrow,
+  .glyphicon-right-arrow {
     position: absolute;
     top: 50%;
     z-index: 5;
     display: inline-block;
   }
   .icon-prev,
-  .glyphicon-chevron-left {
+  .glyphicon-left-arrow {
     left: 50%;
   }
   .icon-next,
-  .glyphicon-chevron-right {
+  .glyphicon-right-arrow {
     right: 50%;
   }
   .icon-prev,
@@ -160,7 +160,7 @@
     margin: 1px;
     text-indent: -999px;
     border: 1px solid @carousel-indicator-border-color;
-    border-radius: 10px;
+    border-radius: 1px;
     cursor: pointer;
 
     // IE8-9 hack for event handling
@@ -207,8 +207,8 @@
 
   // Scale up the controls a smidge
   .carousel-control {
-    .glyphicons-chevron-left,
-    .glyphicons-chevron-right,
+    .glyphicon-left-arrow,
+    .glyphicon-right-arrow,
     .icon-prev,
     .icon-next {
       width: 30px;
