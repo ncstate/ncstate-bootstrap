@@ -297,10 +297,6 @@ a:focus {
   color: #900;
   text-decoration: none;
 }
-a:visited {
-  color: #999;
-  text-decoration: underline;
-}
 a:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
@@ -2730,6 +2726,12 @@ input[type="button"].btn-block {
 }
 .glyphicon-youtube:before {
   content: "w";
+}
+.glyphicon-twitter:before {
+  content: "v";
+}
+.glyphicon-pintrest:before {
+  content: "u";
 }
 .caret {
   display: inline-block;
