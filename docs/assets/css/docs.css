@@ -52,29 +52,31 @@ body {
 }
 
 /* Outline button for use within the docs */
-.btn-outline {
-  color: #563d7c;
+.btn-outline,
+.btn-outline:visited {
+  color: #cc0000;
   background-color: transparent;
-  border-color: #563d7c;
+  border-color: #cc0000;
 }
 .btn-outline:hover,
 .btn-outline:focus,
 .btn-outline:active {
   color: #fff;
-  background-color: #563d7c;
-  border-color: #563d7c;
+  background-color: #cc0000;
+  border-color: #cc0000;
 }
 
 /* Inverted outline button (white on dark) */
-.btn-outline-inverse {
+.btn-outline-inverse,
+.btn-outline-inverse:visited {
   color: #fff;
   background-color: transparent;
-  border-color: #cdbfe3;
+  border-color: #e66767;
 }
 .btn-outline-inverse:hover,
 .btn-outline-inverse:focus,
-.btn-outline-inverse:active {
-  color: #563d7c;
+.btn-outline-inverse:active{
+  color: #cc0000;
   text-shadow: none;
   background-color: #fff;
   border-color: #fff;
@@ -85,7 +87,7 @@ body {
   display: block;
   font-weight: 500;
   color: #fff;
-  background-color: #563d7c;
+  background-color: #cc0000;
   border-radius: 15%;
   cursor: default;
   text-align: center;
@@ -103,12 +105,12 @@ body {
   line-height: 140px;
 }
 .bs-booticon-inverse {
-  color: #563d7c;
+  color: #cc0000;
   background-color: #fff;
 }
 .bs-booticon-outline {
   background-color: transparent;
-  border: 1px solid #cdbfe3;
+  border: 1px solid #e66767;
 }
 
 
@@ -128,17 +130,17 @@ body {
 }
 .bs-docs-nav .navbar-brand,
 .bs-docs-nav .navbar-nav > li > a {
-  color: #563d7c;
+  color: #cc0000;
   font-weight: 500;
 }
 .bs-docs-nav .navbar-nav > li > a:hover,
 .bs-docs-nav .navbar-nav > .active > a,
 .bs-docs-nav .navbar-nav > .active > a:hover {
-  color: #463265;
+  color: #990000;
   background-color: #f9f9f9;
 }
 .bs-docs-nav .navbar-toggle .icon-bar {
-  background-color: #563d7c;
+  background-color: #cc0000;
 }
 .bs-docs-nav .navbar-header .navbar-toggle {
   border-color: #fff;
@@ -235,14 +237,14 @@ body {
 .bs-header {
   position: relative;
   padding: 30px 15px;
-  color: #cdbfe3;
+  color: #e66767;
   text-align: center;
   text-shadow: 0 1px 0 rgba(0,0,0,.1);
-  background-color: #6f5499;
-  background-image: -webkit-linear-gradient(top, #563d7c 0%, #6f5499 100%);
-  background-image: linear-gradient(to bottom, #563d7c 0%, #6f5499 100%);
+  background-color: #cf0606;
+  background-image: -webkit-linear-gradient(top, #cc0000 0%, #cf0606 100%);
+  background-image: linear-gradient(to bottom, #cc0000 0%, #cf0606 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#563d7c', endColorstr='#6F5499', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc0000', endColorstr='#cf0606', GradientType=0);
 }
 
  /* Masthead (headings and download button) */
@@ -545,19 +547,19 @@ body {
 .bs-sidebar .nav > li > a:hover,
 .bs-sidebar .nav > li > a:focus {
   padding-left: 19px;
-  color: #563d7c;
+  color: #cc0000;
   text-decoration: none;
   background-color: transparent;
-  border-left: 1px solid #563d7c;
+  border-left: 1px solid #cc0000;
 }
 .bs-sidebar .nav > .active > a,
 .bs-sidebar .nav > .active:hover > a,
 .bs-sidebar .nav > .active:focus > a {
   padding-left: 18px;
   font-weight: bold;
-  color: #563d7c;
+  color: #cc0000;
   background-color: transparent;
-  border-left: 2px solid #563d7c;
+  border-left: 2px solid #cc0000;
 }
 
 /* Nav: second level (shown on .active) */
@@ -716,7 +718,7 @@ h1[id] {
 .color-swatches .gray-light      { background-color: #999; }
 .color-swatches .gray-lighter    { background-color: #eee; }
 .color-swatches .brand-primary,
-.color-swatches .brand-red	     { background-color: #cc0000; }
+.color-swatches .brand-red       { background-color: #cc0000; }
 .color-swatches .brand-success,
 .color-swatches .brand-green     { background-color: #a4b53a; }
 .color-swatches .brand-warning,
@@ -725,13 +727,13 @@ h1[id] {
 .color-swatches .brand-reynolds  { background-color: #a92325; }
 .color-swatches .brand-info,
 .color-swatches .brand-blue      { background-color: #47869c; }
-.color-swatches .brand-yellow	 { background-color: #fde148; }
-.color-swatches .brand-indigo	 { background-color: #4156a1; }
+.color-swatches .brand-yellow  { background-color: #fde148; }
+.color-swatches .brand-indigo  { background-color: #4156a1; }
 
 /* Docs colors */
-.color-swatches .bs-purple          { background-color: #563d7c; }
-.color-swatches .bs-purple-light    { background-color: #c7bfd3; }
-.color-swatches .bs-purple-lighter  { background-color: #e5e1ea; }
+.color-swatches .bs-purple          { background-color: #cc0000; }
+.color-swatches .bs-purple-light    { background-color: #e63939; }
+.color-swatches .bs-purple-lighter  { background-color: #e66767; }
 .color-swatches .bs-gray            { background-color: #f9f9f9; }
 
 
@@ -1204,7 +1206,7 @@ h1[id] {
 }
 .bs-glyphicons li:hover {
   color: #fff;
-  background-color: #563d7c;
+  background-color: #cc0000;
 }
 
 @media (min-width: 768px) {
@@ -1324,7 +1326,7 @@ h1[id] {
   width: 100%;
   margin-bottom: 15px;
   overflow: hidden;
-  color: #563d7c;
+  color: #cc0000;
   background-color: #f9f9f9;
   border-radius: 4px;
 }
@@ -1339,7 +1341,7 @@ h1[id] {
 }
 .bs-brand-logos .inverse {
   color: #fff;
-  background-color: #563d7c;
+  background-color: #cc0000;
 }
 
 /* Heading content within */
