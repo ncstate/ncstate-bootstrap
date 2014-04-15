@@ -29,6 +29,6 @@ blog:             http://blog.getbootstrap.com
 expo:             http://expo.getbootstrap.com
 
 cdn:
-  css:            //netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css
+  css:            https://cdn.ncsu.edu/brand-assets/bootstrap/css/bootstrap.min.css
   css_theme:      //netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css
-  js:             //netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js
+  js:             https://cdn.ncsu.edu/brand-assets/bootstrap/js/bootstrap.min.js
