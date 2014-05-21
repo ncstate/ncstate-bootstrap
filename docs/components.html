@@ -31,8 +31,12 @@ lead: "Over a dozen reusable components built to provide iconography, dropdowns,
     <h4>Don't mix with other components</h4>
     <p>Icon classes cannot be directly combined with other components. They should not be used along with other classes on the same element. Instead, add a nested <code>&lt;span&gt;</code> and apply the icon classes to the <code>&lt;span&gt;</code>.</p>
   </div>
+  <div class="bs-callout bs-callout-danger">
+    <h4>Accessibility of Glyphicons</h4>
+    <p>All images need to have a textual description so users who use an assistive technology, like a screen reader, can know what function the icon plays in the page. If you are not already providing contextual descriptive text with your icon, you can include the descriptive text in the <code>data-alt</code> attribute. If you omit the <code>data-alt</code> attribute, no textual alternative will be rendered.</p>
+  </div>
 {% highlight html %}
-<span class="glyphicon glyphicon-search"></span>
+<span class="glyphicon glyphicon-search" data-alt="search"></span>
 {% endhighlight %}
 
 
@@ -41,10 +45,10 @@ lead: "Over a dozen reusable components built to provide iconography, dropdowns,
   <div class="bs-example">
     <div class="btn-toolbar" role="toolbar">
       <div class="btn-group">
-        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-left-arrow"></span></button>
-        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-right-arrow"></span></button>
-        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-check"></span></button>
-        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-x"></span></button>
+        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-left-arrow" data-alt="left"></span></button>
+        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-right-arrow" data-alt="right"></span></button>
+        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-check" data-alt="yes"></span></button>
+        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-x" data-alt="no"></span></button>
       </div>
     </div>
     <div class="btn-toolbar" role="toolbar">
