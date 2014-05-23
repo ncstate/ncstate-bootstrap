@@ -10,11 +10,11 @@ a:focus {
   outline: dotted 1px black;
 }
 
-.close:hover, .close:focus {
+.close:focus {
   outline: dotted 1px black;
 }
 
-.nav > li > a:hover, .nav > li > a:focus {
+.nav > li > a:focus {
   outline: dotted 1px black;
 }
 
@@ -22,9 +22,9 @@ a:focus {
   position: absolute;
   top: -999999em;
   display: block;
-  -webkit-transition: 0.6s ease-in-out left;
   -moz-transition: 0.6s ease-in-out left;
   -o-transition: 0.6s ease-in-out left;
+  -webkit-transition: 0.6s ease-in-out left;
   transition: 0.6s ease-in-out left;
 }
 .carousel-inner > .active {
