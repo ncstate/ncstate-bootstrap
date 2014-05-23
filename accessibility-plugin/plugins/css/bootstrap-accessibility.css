@@ -41,24 +41,3 @@ a:focus {
   top: 0;
   width: 100%;
 }
-
-.alert-success {
-  color: #2d4821;
-}
-
-.alert-info {
-  color: #214c62;
-}
-
-.alert-warning {
-  color: #6c4a00;
-  background-color: #f9f1c6;
-}
-
-.alert-danger {
-  color: #d2322d;
-}
-
-.alert-danger:hover {
-  color: #a82824;
-}
