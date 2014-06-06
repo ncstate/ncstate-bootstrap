@@ -147,3 +147,25 @@ hr {
   clip: rect(0,0,0,0);
   border: 0;
 }
+
+// Only display content to screen readers for focusble content
+//
+// If content is displayed only for screen reader users and the content can receive focus,
+// then the focus rings might not display correctly if the hidden content is not positioned
+// a logical place on screen. For screen readers such as VoiceOver and ChromeVox, they will 
+// "focus" on plain text items on the page as the user is reading the page. This is
+// problematic for glyphicons which also include screen reader only text alternatives.
+// This solution positions the hidden alternative content directly over the glyphicon.
+
+.sr-only-glyphicon {
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    margin: 0px;
+    margin-left:-1em;
+    padding: 0px;
+    overflow: hidden;
+    clip: rect(0px, 0px, 0px, 0px);
+    border: 0px none;
+
+}
