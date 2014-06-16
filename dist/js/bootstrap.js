@@ -1965,6 +1965,7 @@ $(function() {
         // if the data-alt attribute exists, write the contents of the attribute
         if (typeof alt !== "undefined") {
             // if the glyphicon font is loaded, write the contents of the data-alt to off-screen screen reader only text
+            // and size the "hidden" text to be the same size as the glyphicon
             if ($(this).css('font-family') == 'ncsu-icons') {
                 $(this).after('<span style="font-size:'+ textSize +'" class="sr-only-glyphicon">' + alt + '</span>');
                 
