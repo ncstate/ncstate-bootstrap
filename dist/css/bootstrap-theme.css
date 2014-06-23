@@ -80,17 +80,17 @@
                filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",argb(@start-color),argb(@end-color))); // IE9 and down*/
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   background-repeat: repeat-x;
-  border-color: #737f29;
+  border-color: #495212;
 }
 .btn-success:hover,
 .btn-success:focus {
-  background-color: #7a872b;
+  background-color: #505a14;
   background-position: 0 -15px;
 }
 .btn-success:active,
 .btn-success.active {
-  background-color: #7a872b;
-  border-color: #737f29;
+  background-color: #505a14;
+  border-color: #495212;
 }
 .btn-info {
   /* background-image: -webkit-linear-gradient(top, @start-color @start-percent, @end-color @end-percent);  // Safari 5.1-6, Chrome 10+
@@ -99,17 +99,17 @@
                filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",argb(@start-color),argb(@end-color))); // IE9 and down*/
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   background-repeat: repeat-x;
-  border-color: #315c6b;
+  border-color: #2c5462;
 }
 .btn-info:hover,
 .btn-info:focus {
-  background-color: #346272;
+  background-color: #2f5a69;
   background-position: 0 -15px;
 }
 .btn-info:active,
 .btn-info.active {
-  background-color: #346272;
-  border-color: #315c6b;
+  background-color: #2f5a69;
+  border-color: #2c5462;
 }
 .btn-warning {
   /* background-image: -webkit-linear-gradient(top, @start-color @start-percent, @end-color @end-percent);  // Safari 5.1-6, Chrome 10+
@@ -118,17 +118,17 @@
                filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",argb(@start-color),argb(@end-color))); // IE9 and down*/
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   background-repeat: repeat-x;
-  border-color: #974e20;
+  border-color: #943918;
 }
 .btn-warning:hover,
 .btn-warning:focus {
-  background-color: #9f5221;
+  background-color: #9c3d19;
   background-position: 0 -15px;
 }
 .btn-warning:active,
 .btn-warning.active {
-  background-color: #9f5221;
-  border-color: #974e20;
+  background-color: #9c3d19;
+  border-color: #943918;
 }
 .btn-danger {
   /* background-image: -webkit-linear-gradient(top, @start-color @start-percent, @end-color @end-percent);  // Safari 5.1-6, Chrome 10+
@@ -227,21 +227,21 @@
                background-image: linear-gradient(to bottom, @start-color @start-percent, @end-color @end-percent); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
                background-repeat: repeat-x;
                filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",argb(@start-color),argb(@end-color))); // IE9 and down*/
-  border-color: #c2d06c;
+  border-color: #b5cb2d;
 }
 .alert-info {
   /* background-image: -webkit-linear-gradient(top, @start-color @start-percent, @end-color @end-percent);  // Safari 5.1-6, Chrome 10+
                background-image: linear-gradient(to bottom, @start-color @start-percent, @end-color @end-percent); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
                background-repeat: repeat-x;
                filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",argb(@start-color),argb(@end-color))); // IE9 and down*/
-  border-color: #71aabe;
+  border-color: #67a5bb;
 }
 .alert-warning {
   /* background-image: -webkit-linear-gradient(top, @start-color @start-percent, @end-color @end-percent);  // Safari 5.1-6, Chrome 10+
                background-image: linear-gradient(to bottom, @start-color @start-percent, @end-color @end-percent); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
                background-repeat: repeat-x;
                filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",argb(@start-color),argb(@end-color))); // IE9 and down*/
-  border-color: #e0986b;
+  border-color: #e4805b;
 }
 .alert-danger {
   /* background-image: -webkit-linear-gradient(top, @start-color @start-percent, @end-color @end-percent);  // Safari 5.1-6, Chrome 10+
