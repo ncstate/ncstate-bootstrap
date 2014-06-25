@@ -619,7 +619,7 @@ h1[id] {
   float: left;
   width:  60px;
   height: 60px;
-  margin: 0 5px;
+  margin: 0 5px 5px;
   border-radius: 3px;
 }
 
@@ -639,14 +639,14 @@ h1[id] {
 .color-swatches .brand-primary,
 .color-swatches .brand-red       { background-color: #cc0000; }
 .color-swatches .brand-success,
-.color-swatches .brand-green     { background-color: #a4b53a; }
+.color-swatches .brand-green     { background-color: #7D8C1F; }
 .color-swatches .brand-warning,
-.color-swatches .brand-orange    { background-color: #d26c2c; }
+.color-swatches .brand-orange    { background-color: #D15122; }
 .color-swatches .brand-danger,
-.color-swatches .brand-reynolds  { background-color: #a92325; }
+.color-swatches .brand-reynolds  { background-color: #990000; }
 .color-swatches .brand-info,
-.color-swatches .brand-blue      { background-color: #47869c; }
-.color-swatches .brand-yellow  { background-color: #fde148; }
+.color-swatches .brand-blue      { background-color: #427E93; }
+.color-swatches .brand-yellow  { background-color: #FDD726; }
 .color-swatches .brand-indigo  { background-color: #4156a1; }
 
 /* Docs colors */
