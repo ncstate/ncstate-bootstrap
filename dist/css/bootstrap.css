@@ -2747,6 +2747,9 @@ input[type="button"].btn-block {
 .glyphicon-email:before {
   content: "z";
 }
+.glyphicon-thin-arrow:before {
+  content: "a";
+}
 .caret {
   display: inline-block;
   width: 0;
