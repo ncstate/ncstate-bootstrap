@@ -2717,6 +2717,9 @@ input[type="button"].btn-block {
 .glyphicon-menu:before {
   content: "o";
 }
+.glyphicon-thin-menu:before {
+  content: "D";
+}
 .glyphicon-link:before {
   content: "p";
 }
@@ -2747,14 +2750,17 @@ input[type="button"].btn-block {
 .glyphicon-email:before {
   content: "z";
 }
+.glyphicon-thin-chevron:before {
+  content: "C";
+}
 .glyphicon-thin-arrow:before {
   content: "a";
 }
-.glyphicon-bold-arrow:before {
-  content: "A";
-}
 .glyphicon-roman-arrow:before {
   content: "B";
+}
+.glyphicon-bold-arrow:before {
+  content: "A";
 }
 .caret {
   display: inline-block;
