@@ -5,6 +5,7 @@
 - glyphicon-double-arrow
 - glyphicon-down-arrow
 - glyphicon-download
+- glyphicon-download no-bkgrnd
 - glyphicon-left-arrow-bkgrnd
 - glyphicon-left-arrow
 - glyphicon-right-arrow-bkgrnd
@@ -32,3 +33,11 @@
 - glyphicon-thin-arrow
 - glyphicon-roman-arrow
 - glyphicon-bold-arrow
+- glyphicon-rss
+- glyphicon-down-bracket
+- glyphicon-up-bracket
+- glyphicon-play
+- glyphicon-up-thin-arrow
+- glyphicon-checkbox
+- glyphicon-date
+- glyphicon-question

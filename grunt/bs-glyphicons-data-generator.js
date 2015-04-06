@@ -22,7 +22,7 @@ module.exports = function generateGlyphiconsData() {
     var match = glpyhiconsLines[i].match(iconClassName)
 
     if (match != null) {
-      glyphiconsData += '- ' + match[1] + '\n'
+      glyphiconsData += '- ' + match[1].replace('.', ' ') + '\n'
     }
   }
 
