@@ -14,13 +14,14 @@ $(function() {
         if (typeof alt !== "undefined") {
             // if the glyphicon font is loaded, write the contents of the data-alt to off-screen screen reader only text
             // and size the "hidden" text to be the same size as the glyphicon
-            if ($(this).css('font-family') == 'ncsu-icons') {
+            // Conditionals not working 4/6/15. Firefox mistakenly evaluates IF to false
+            //if ($(this).css('font-family') == 'ncsu-icons') {
                 $(this).after('<span style="font-size:'+ textSize +'" class="sr-only-glyphicon">' + alt + '</span>');
                 
-            } else { // if the glyphicon font is NOT loaded, write the contents of the data-alt to on-screen text because the font is not displaying correctly
-                $(this).after('<span>' + alt + '</span>');
-                $(this).addClass('sr-only'); // make the failing glyphicon hidden off screen so it will not confuse users
-            }
+            //} else { // if the glyphicon font is NOT loaded, write the contents of the data-alt to on-screen text because the font is not displaying correctly
+                //$(this).after('<span>' + alt + '</span>');
+                //$(this).addClass('sr-only'); // make the failing glyphicon hidden off screen so it will not confuse users
+            //}
         }
     });
 })
