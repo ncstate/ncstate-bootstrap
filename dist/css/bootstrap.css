@@ -5690,6 +5690,14 @@ button.close {
   /*font-family:"Univers LT W02 45 Light";*/
 }
 @font-face {
+  font-family: "UniversLight";
+  font-weight: bold;
+
+  src: url("//cdn.ncsu.edu/brand-assets/fonts/f1999e78-ab0c-4adc-a7dc-51e567e6cf5e.eot?#iefix");
+  src: url("//cdn.ncsu.edu/brand-assets/fonts/f1999e78-ab0c-4adc-a7dc-51e567e6cf5e.eot?#iefix") format("embedded-opentype"), url("//cdn.ncsu.edu/brand-assets/fonts/4d1e8df3-6c45-428d-a522-84c8a6a4e533.woff") format("woff"), url("//cdn.ncsu.edu/brand-assets/fonts/3c9abc50-742c-46dd-8af4-c50866112be0.ttf") format("truetype"), url("//cdn.ncsu.edu/brand-assets/fonts/c6310aa0-a8a1-4afc-a747-091de3970894.svg#c6310aa0-a8a1-4afc-a747-091de3970894") format("svg");
+  /* Univers LT W02 55 Roman */
+}
+@font-face {
   font-family: "UniversRoman";
 
   src: url("//cdn.ncsu.edu/brand-assets/fonts/f1999e78-ab0c-4adc-a7dc-51e567e6cf5e.eot?#iefix");
