@@ -2752,6 +2752,9 @@ input[type="button"].btn-block {
 .glyphicon-pintrest:before {
   content: "u";
 }
+.glyphicon-pinterest:before {
+  content: "u";
+}
 .glyphicon-email:before {
   content: "z";
 }
