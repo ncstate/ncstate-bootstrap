@@ -2794,6 +2794,9 @@ input[type="button"].btn-block {
 .glyphicon-question:before {
   content: "N";
 }
+.glyphicon-pause:before {
+  content: "O";
+}
 .caret {
   display: inline-block;
   width: 0;
