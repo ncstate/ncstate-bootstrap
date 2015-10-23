@@ -172,9 +172,17 @@ ul{
 			}
 			li { 
 				&:before {
-					content: none;
+          content: '';
+          width: 5px;
+          height: 5px;
+          display: inline-block;
+          background-color: #ccc;
+          margin-right: 1em;
+          position: relative;
+          top: auto;
+          bottom: 3px;
+          left: 6px;
 				}
-				background: url("../img/gray-square.gif") no-repeat 1px 6px;
 			}
 		}
   }
