@@ -597,11 +597,17 @@ ul li:before {
 ul li li:before {
   color: #999;
 }
-ul li li li {
-  background: url("../img/gray-square.gif") no-repeat 1px 6px;
-}
 ul li li li:before {
-  content: none;
+  position: relative;
+  top: auto;
+  bottom: 3px;
+  left: 6px;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-right: 1em;
+  content: '';
+  background-color: #ccc;
 }
 .ncstate-padded-list li {
   margin: 10px 0;
