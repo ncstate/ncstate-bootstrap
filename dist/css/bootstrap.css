@@ -597,17 +597,11 @@ ul li:before {
 ul li li:before {
   color: #999;
 }
+ul li li li {
+  background: url("../img/gray-square.gif") no-repeat 1px 6px;
+}
 ul li li li:before {
-  position: relative;
-  top: auto;
-  bottom: 3px;
-  left: 6px;
-  display: inline-block;
-  width: 5px;
-  height: 5px;
-  margin-right: 1em;
-  content: '';
-  background-color: #ccc;
+  content: none;
 }
 .ncstate-padded-list li {
   margin: 10px 0;
@@ -2788,6 +2782,9 @@ input[type="button"].btn-block {
 .glyphicon-play:before {
   content: "I";
 }
+.glyphicon-pause:before {
+  content: "O";
+}
 .glyphicon-up-thin-arrow:before {
   content: "J";
 }
@@ -2799,9 +2796,6 @@ input[type="button"].btn-block {
 }
 .glyphicon-question:before {
   content: "N";
-}
-.glyphicon-pause:before {
-  content: "O";
 }
 .caret {
   display: inline-block;
