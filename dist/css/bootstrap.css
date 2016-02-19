@@ -2713,6 +2713,12 @@ input[type="button"].btn-block {
 .glyphicon-plus:before {
   content: "g";
 }
+.glyphicon-plus-no-bkgrnd:before {
+  content: "R";
+}
+.glyphicon-minus:before {
+  content: "Q";
+}
 .glyphicon-check:before {
   content: "n";
 }
