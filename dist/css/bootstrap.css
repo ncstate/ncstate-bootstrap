@@ -2764,6 +2764,9 @@ input[type="button"].btn-block {
 .glyphicon-pinterest:before {
   content: "u";
 }
+.glyphicon-tumblr:before {
+  content: "S";
+}
 .glyphicon-email:before {
   content: "z";
 }
