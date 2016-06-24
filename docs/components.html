@@ -16,7 +16,7 @@ lead: "Over a dozen reusable components built to provide iconography, dropdowns,
   <div class="bs-glyphicons">
     <ul class="bs-glyphicons-list list-unstyled">
       {% for iconClassName in site.data.glyphicons %}
-	  	{% if iconClassName != "glyphicon-pintrest" %}
+	  	{% if (iconClassName != "glyphicon-pintrest") and (iconClassName != "glyphicon-thin-arrow") and (iconClassName != "glyphicon-roman-arrow") and (iconClassName != "glyphicon-bold-arrow") %}
 	        <li>
 	          <span class="glyphicon {{ iconClassName }}"></span>
 	          <span class="glyphicon-class">glyphicon {{ iconClassName }}</span>

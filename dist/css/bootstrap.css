@@ -2692,11 +2692,11 @@ input[type="button"].btn-block {
 .glyphicon-left-arrow:before {
   content: "f";
 }
-.glyphicon-right-arrow-bkgrnd:before {
-  content: "h";
-}
 .glyphicon-right-arrow:before {
   content: "i";
+}
+.glyphicon-right-arrow-bkgrnd:before {
+  content: "h";
 }
 .glyphicon-search-bkgrnd:before {
   content: "j";
@@ -2773,13 +2773,31 @@ input[type="button"].btn-block {
 .glyphicon-thin-chevron:before {
   content: "C";
 }
+.glyphicon-thin-arrow-left:before {
+  content: "U";
+}
 .glyphicon-thin-arrow:before {
   content: "a";
+}
+.glyphicon-thin-arrow-right:before {
+  content: "a";
+}
+.glyphicon-roman-arrow-left:before {
+  content: "V";
 }
 .glyphicon-roman-arrow:before {
   content: "B";
 }
+.glyphicon-roman-arrow-right:before {
+  content: "B";
+}
+.glyphicon-bold-arrow-left:before {
+  content: "T";
+}
 .glyphicon-bold-arrow:before {
+  content: "A";
+}
+.glyphicon-bold-arrow-right:before {
   content: "A";
 }
 .glyphicon-rss:before {

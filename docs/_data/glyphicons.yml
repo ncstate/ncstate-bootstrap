@@ -8,8 +8,8 @@
 - glyphicon-download no-bkgrnd
 - glyphicon-left-arrow-bkgrnd
 - glyphicon-left-arrow
-- glyphicon-right-arrow-bkgrnd
 - glyphicon-right-arrow
+- glyphicon-right-arrow-bkgrnd
 - glyphicon-search-bkgrnd
 - glyphicon-search
 - glyphicon-video
@@ -35,9 +35,15 @@
 - glyphicon-tumblr
 - glyphicon-email
 - glyphicon-thin-chevron
+- glyphicon-thin-arrow-left
 - glyphicon-thin-arrow
+- glyphicon-thin-arrow-right
+- glyphicon-roman-arrow-left
 - glyphicon-roman-arrow
+- glyphicon-roman-arrow-right
+- glyphicon-bold-arrow-left
 - glyphicon-bold-arrow
+- glyphicon-bold-arrow-right
 - glyphicon-rss
 - glyphicon-down-bracket
 - glyphicon-up-bracket
