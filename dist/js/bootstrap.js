@@ -1950,8 +1950,10 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
 
 }(jQuery);
 
-$(function() {
-    jQuery('.glyphicon').each(function() {
++function ($) {
+    'use strict';
+
+    $('.glyphicon').each(function() {
         /*
          * The glyphicon needs to be formatted as follows.
          * <span class="glyphicon glyphicon-close" data-alt="close"></span>
@@ -1960,8 +1962,8 @@ $(function() {
          * 
          */
         $(this).attr('aria-hidden', 'true'); // hide the pseudo-element from screen readers
-        var alt = jQuery(this).data('alt') // get the data-alt attribute
-        var textSize = jQuery(this).css('font-size'); // get the font size of the glyphicon
+        var alt = $(this).data('alt') // get the data-alt attribute
+        var textSize = $(this).css('font-size'); // get the font size of the glyphicon
         // if the data-alt attribute exists, write the contents of the attribute
         if (typeof alt !== "undefined") {
             // if the glyphicon font is loaded, write the contents of the data-alt to off-screen screen reader only text
@@ -1976,4 +1978,4 @@ $(function() {
             //}
         }
     });
-})
+}(jQuery);
