@@ -2830,6 +2830,9 @@ input[type="button"].btn-block {
 .glyphicon-expand:before {
   content: "W";
 }
+.glyphicon-360:before {
+  content: "X";
+}
 .caret {
   display: inline-block;
   width: 0;
