@@ -7,14 +7,16 @@
 //
 // <a href="#"><span class="glyphicon glyphicon-star"></span> Star</a>
 
+@ncsu-icon-version: `Math.floor(Date.now() / 1000)`;
+
 // Import the fonts
 @font-face {
   font-family: 'ncsu-icons';
-  src: ~"url('@{icon-font-path}@{icon-font-name}.eot')";
-  src: ~"url('@{icon-font-path}@{icon-font-name}.eot?#iefix') format('embedded-opentype')",
-       ~"url('@{icon-font-path}@{icon-font-name}.woff') format('woff')",
-       ~"url('@{icon-font-path}@{icon-font-name}.ttf') format('truetype')",
-       ~"url('@{icon-font-path}@{icon-font-name}.svg#@{icon-font-svg-id}') format('svg')";
+  src: ~"url('@{icon-font-path}@{icon-font-name}.eot?@{ncsu-icon-version}')";
+  src: ~"url('@{icon-font-path}@{icon-font-name}.eot?@{ncsu-icon-version}#iefix') format('embedded-opentype')",
+       ~"url('@{icon-font-path}@{icon-font-name}.woff?@{ncsu-icon-version}') format('woff')",
+       ~"url('@{icon-font-path}@{icon-font-name}.ttf?@{ncsu-icon-version}') format('truetype')",
+       ~"url('@{icon-font-path}@{icon-font-name}.svg?@{ncsu-icon-version}#@{icon-font-svg-id}') format('svg')";
 }
 
 // Catchall baseclass

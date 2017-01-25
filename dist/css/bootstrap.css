@@ -2656,8 +2656,8 @@ input[type="button"].btn-block {
 @font-face {
   font-family: 'ncsu-icons';
 
-  src: url('https://cdn.ncsu.edu/brand-assets/icons/ncsu-icons.eot');
-  src: url('https://cdn.ncsu.edu/brand-assets/icons/ncsu-icons.eot?#iefix') format('embedded-opentype'), url('https://cdn.ncsu.edu/brand-assets/icons/ncsu-icons.woff') format('woff'), url('https://cdn.ncsu.edu/brand-assets/icons/ncsu-icons.ttf') format('truetype'), url('https://cdn.ncsu.edu/brand-assets/icons/ncsu-icons.svg#ncsu-icons') format('svg');
+  src: url('https://cdn.ncsu.edu/brand-assets/icons/ncsu-icons.eot?1485360097');
+  src: url('https://cdn.ncsu.edu/brand-assets/icons/ncsu-icons.eot?1485360097#iefix') format('embedded-opentype'), url('https://cdn.ncsu.edu/brand-assets/icons/ncsu-icons.woff?1485360097') format('woff'), url('https://cdn.ncsu.edu/brand-assets/icons/ncsu-icons.ttf?1485360097') format('truetype'), url('https://cdn.ncsu.edu/brand-assets/icons/ncsu-icons.svg?1485360097#ncsu-icons') format('svg');
 }
 .glyphicon {
   position: relative;
